@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.welcome-text {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, yellow, green, blue, indigo, violet, purple);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.input-container {
+    margin: 20px;
+}
+
+#nameOrEmail {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#playerChoice {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#gameBoard {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#gameBoard td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#gameResult {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#leaderboardWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#leaderboard {
+    border-collapse: collapse;
+    width: 80%; /* Adjust width as needed */
+    text-align: center;
+}
+
+#leaderboard th, #leaderboard td {
+    border: 1px solid #ddd; /* Light gray border for rows and columns */
+    padding: 8px; /* Space inside each cell */
+}
+
+#leaderboard th {
+    background-color: #f2f2f2; /* Light gray background for header */
+    font-weight: bold;
+}

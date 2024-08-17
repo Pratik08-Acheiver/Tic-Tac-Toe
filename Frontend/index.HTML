@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome-text">Welcome To TIC-TAC-TOE Game</h1>
+        
+        <div class="input-container">
+            <input type="text" id="nameOrEmail" placeholder="Enter your name or email" required>
+            <select id="playerChoice">
+                <option value="X">X</option>
+                <option value="O">O</option>
+            </select>
+            <button id="startButton">Start Game</button>
+        </div>
+
+        <div id="gameContainer" style="display:none;">
+            <table id="gameBoard">
+                <tr>
+                    <td id="cell0"></td>
+                    <td id="cell1"></td>
+                    <td id="cell2"></td>
+                </tr>
+                <tr>
+                    <td id="cell3"></td>
+                    <td id="cell4"></td>
+                    <td id="cell5"></td>
+                </tr>
+                <tr>
+                    <td id="cell6"></td>
+                    <td id="cell7"></td>
+                    <td id="cell8"></td>
+                </tr>
+            </table>
+            <p id="gameResult"></p>
+            <button id="resetButton">Reset Game</button>
+        </div>
+
+        <div id="leaderboardContainer">
+            <button id="leaderboardButton">Show Leaderboard</button>
+            <table id="leaderboard" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
